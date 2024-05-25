@@ -4,10 +4,6 @@ variable "aws_region" {
   default     = "us-east-1"
 }
 
-variable "key_name" {
-  description = "Name of the SSH key pair"
-}
-
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   default     = "ami-04b70fa74e45c3917"
