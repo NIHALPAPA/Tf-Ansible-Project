@@ -178,6 +178,7 @@ resource "aws_instance" "nihal-terraform" {
   security_groups = [aws_security_group.allow_web.id] # specify the security group(s) for the instance(s)
 
   tags = {
+    Environment = "prod"
     Name = "nihal-terraform_${count.index + 1}"
   }
 }
