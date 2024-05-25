@@ -2,7 +2,7 @@
 resource "aws_instance" "nihal-terraform" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  key_name      = "HERO2"
+  key_name      = "tf_key"
   count = 2
 
   tags = {
